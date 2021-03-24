@@ -27,13 +27,8 @@
     "prerelease": "yarn build",
     "release": "semantic-release",
     "test": "jest",
-    "test:coverage": "jest --coverage"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "test:coverage": "jest --coverage",
+    "prepare": "husky install"
   },
   "config": {
     "commitizen": {
@@ -52,12 +47,11 @@
     "@typescript-eslint/parser": "^4.19.0",
     "commitizen": "^4.2.3",
     "commitlint": "^12.0.1",
-    "doctoc": "^1.4.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-jest": "^24.3.2",
     "eslint-plugin-prettier": "^3.3.1",
-    "husky": "^4.3.0",
+    "husky": "5",
     "jest": "^26.6.3",
     "jest-junit": "^12.0.0",
     "lint-staged": "^10.5.4",
